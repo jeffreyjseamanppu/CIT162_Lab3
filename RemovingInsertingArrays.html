@@ -1,0 +1,30 @@
+<script type="text/javascript">
+  var teams = [];
+
+  teams[0] = "Steelers";
+  teams[1] = "Penguins";
+  teams[2] = "Riverhounds";
+  teams[3] = "Pirates";
+
+  alert("Array 0 = " + teams[0]);
+
+  //Shift position 0 out of the order
+  teams.shift();
+
+  //Redisplay position 0
+  alert("Array 0 = " + teams[0]);
+
+  //Reshift our order
+  teams.unshift("Mountaineers");
+  alert("Array 0 = " + teams[0]);
+
+  //Displays position 2,3
+  alert("Array 0 = " + teams[2]);
+  alert("Array 0 = " + teams[3]);
+
+  //Position 2 new teams after position 1 is currently Penguins
+  teams.splice(2,2,"Buckeyes","Blue Jackets");
+  alert(teams);
+
+
+</script>
